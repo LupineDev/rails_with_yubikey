@@ -1,0 +1,2 @@
+module LemursHelper
+end

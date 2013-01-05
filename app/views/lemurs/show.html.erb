@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Species:</b>
+  <%= @lemur.species %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @lemur.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_lemur_path(@lemur) %> |
+<%= link_to 'Back', lemurs_path %>
