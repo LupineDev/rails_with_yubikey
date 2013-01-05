@@ -7,6 +7,7 @@ gem 'rails', '3.2.10'
 
 gem 'sqlite3'
 gem 'devise'
+gem 'yubikey'
 gem 'yubikey_database_authenticatable'
 
 

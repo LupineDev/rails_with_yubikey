@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130105025236) do
+ActiveRecord::Schema.define(:version => 20130105033407) do
 
   create_table "lemurs", :force => true do |t|
     t.string   "species"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20130105025236) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "stewards", :force => true do |t|
+  create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
     t.string   "reset_password_token"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20130105025236) do
     t.string   "registeredyubikey"
   end
 
-  add_index "stewards", ["email"], :name => "index_stewards_on_email", :unique => true
-  add_index "stewards", ["reset_password_token"], :name => "index_stewards_on_reset_password_token", :unique => true
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

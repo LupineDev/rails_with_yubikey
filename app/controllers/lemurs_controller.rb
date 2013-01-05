@@ -1,5 +1,5 @@
 class LemursController < ApplicationController
-  before_filter :authenticate_steward!
+  before_filter :authenticate_user!
   # GET /lemurs
   # GET /lemurs.json
   def index

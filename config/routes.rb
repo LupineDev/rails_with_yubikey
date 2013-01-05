@@ -1,5 +1,5 @@
 RailsWithYubikey::Application.routes.draw do
-  devise_for :stewards
+  devise_for :users
 
   resources :lemurs
 
